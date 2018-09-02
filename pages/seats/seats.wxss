@@ -1,0 +1,56 @@
+/* pages/seats/seats.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid black; */
+}
+.container .sceneContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  /* border: 3px solid lime; */
+}
+.container .sceneContainer image {
+  width: 100%;
+}
+.container .seatCaontainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  box-sizing: border-box;
+  /* border: 3px solid blue; */
+}
+
+.seats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.seats .userSeats {
+  width: 200rpx;
+  height: 200rpx;
+  /* border: 3px solid red; */
+  box-sizing: border-box;
+  font-size: 40rpx;
+  text-align: center;
+  margin: 30rpx 0;
+  padding-top: 25rpx;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  background-color: green;
+  cursor: pointer;
+}
+.seats .userSeats image {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin-left: 30%;
+}

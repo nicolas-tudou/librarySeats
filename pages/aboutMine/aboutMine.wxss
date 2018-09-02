@@ -1,0 +1,123 @@
+/* pages/aboutMine/aboutMine.wxss */
+.container {
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+/* 用户信息 */
+.container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+.container .user .userInfo {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /* border: 2px solid pink; */
+}
+.container .user .userInfo .userImg {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate3d(-50%, 0, 0);
+  width: 200rpx;
+  height: 200rpx;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+.container .user .userInfo text {
+  position: absolute;
+  bottom: 30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 70%;
+  height: 80rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #ccc;
+}
+.container .user .login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border: 1px solid #ccc;
+  border-radius: 16rpx;
+}
+
+
+/* 座位信息 */
+.container .seat {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* border: 1px solid black; */
+}
+.container .seat .seatInfo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.container .seat .seatInfo text {
+  font-size: 45rpx;
+}
+.container .seat .seatInfo .seatTips {
+  /* border: 1px solid black; */
+  margin-top: 30rpx;
+  flex: 1;
+}
+.container .seat .seatInfo .seatNumber {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  flex: 3;
+}
+.container .seat .seatInfo .seatPosition {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  flex: 3;
+}
+.container .seat .seatInfo .releaseSeat {
+  width: 70%;
+  height: 60rpx;
+  flex: 3;
+}
+.container .seat .getSeat {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+.container .seat .getSeat>button {
+  width: 70%;
+  height: 20%;
+  /* border: 1px solid red; */
+}
+.container .seat .getSeat .seatsList {
+  width: 100%;
+  height: 80%;
+  /* border: 1px solid deepskyblue; */
+}
+.container .seat .getSeat .seatsList .seatItem {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1px solid #888;
+}

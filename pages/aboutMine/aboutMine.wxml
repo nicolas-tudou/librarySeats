@@ -1,0 +1,37 @@
+<!--pages/aboutMine/aboutMine.wxml-->
+<view class='container'>
+  <view class='user'>
+    <view class='userInfo' wx:if="{{isLogin}}">
+      <image src='{{userImgUrl}}' class='userImg'></image>
+      <text>{{userName}}</text>
+    </view>
+    <view wx:else class='login'>
+      <button open-type="getUserInfo">点击登陆</button>      
+    </view>
+  </view>
+  <!-- 座位信息 -->
+  <view class='seat'>
+    <view wx:if="{{hasSeat}}" class='seatInfo'>
+      <view class='seatTips'>
+        <text>您已经拥有一个座位</text>
+      </view>
+      <view class='seatNumber'>
+        <text>座位编号：{{seatNumber}}</text>
+      </view>
+      <view class='seatPosition'>
+        <text>座位位置：{{seatPosition}}</text>
+      </view>
+      <view class='releaseSeat'>
+        <button bindtap="releaseSeat">退座</button>
+      </view>
+    </view>
+    <view wx:else class='getSeat'>
+      <button bindtap="getSeat">您还没有座位，点击查询座位</button>
+      <scroll-view scroll-top="{{scrollTop}}" scroll-y class='seatsList'>
+        <button  wx:for="{{aviliableSeats}}" wx:key="index" class='seatItem' bindtap='occupy' style='background-color: {{bgColor}}' id='{{index}}'>
+          {{item.seatNumber}}: {{item.seatPosition}}：<text wx:if="{{item.available}}">不可用</text><text wx:else>可用</text>
+        </button>
+      </scroll-view>
+    </view>
+  </view>
+</view>

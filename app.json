@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/seats/seats",
+    "pages/aboutMine/aboutMine",
+    "pages/index/index",
+    "pages/aboutSchool/aboutSchool",
+    "pages/logs/logs",
+    "pages/seatsRules/seatsRules"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#999",
+    "navigationBarTitleText": "学习的地方",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "white",
+    "backgroundColor": "#666",
+    "selectedColor": "skyblue",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "/imgs/homeW.png",
+        "selectedIconPath": "/imgs/homeB.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/seats/seats",
+        "iconPath": "/imgs/aviSeat.png",
+        "selectedIconPath": "/imgs/noSeat.png",
+        "text": "自习座位"
+      },
+      {
+        "pagePath": "pages/aboutMine/aboutMine",
+        "iconPath": "/imgs/mineW.png",
+        "selectedIconPath": "/imgs/mineB.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

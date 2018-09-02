@@ -1,0 +1,42 @@
+<!--pages/seats/seats.wxml-->
+<view class='container'>
+  <view class='sceneContainer'>
+    <image src='/imgs/ChinaLibarary.jpg'></image>
+  </view>
+  <view class='seatCaontainer'>
+    <view class='seats'>
+      <view style="background-color: {{bgColor_seatsRules}};" class='userSeats' bindtap='seatsRules'>
+        <image src='/imgs/rules.png'></image>
+        <text>用座规则</text>
+      </view>
+      <view style="background-color: {{bgColor_seatsOrder}};" class='userSeats' bindtap='seatsOrder'>
+        <image src='/imgs/order.png'></image>
+        <text>预定</text>
+      </view>
+      <view style="background-color: {{bgColor_studySign}};" class='userSeats' bindtap='studySign'>
+        <image src='/imgs/sign.png'></image>
+        <text>签到</text>
+      </view>
+      <view style="background-color: {{bgColor_seatSearch}};" class='userSeats' bindtap='seatSearch'>
+        <image src='/imgs/search.png'></image>
+        <text>空座查询</text>
+      </view>
+      <view style="background-color: {{bgColor_localChose}};" class='userSeats' bindtap='localChose'>
+        <image src='/imgs/local.png'></image>
+        <text>现场选座</text>
+      </view>
+      <view style="background-color: {{bgColor_leave}};" class='userSeats' bindtap='leave'>
+        <image src='/imgs/leave.png'></image>
+        <text>暂离</text>
+      </view>
+      <view style="background-color: {{bgColor_release}};" class='userSeats' bindtap='release'>
+        <image src='/imgs/aviSeat.png'></image>
+        <text>退座</text>
+      </view>
+      <view style="background-color: {{bgColor_report}};" class='userSeats' bindtap='report'>
+        <image src='/imgs/report.png'></image>
+        <text>座位仲裁</text>
+      </view>
+    </view>
+  </view>
+</view>
